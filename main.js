@@ -39,7 +39,7 @@ form.on('submit', function(e) {
 	}
 
 	else {
-		
+		$(location).attr('href', 'http://www.theironyard.com')
 	}
 });
 
