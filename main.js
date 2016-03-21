@@ -17,15 +17,17 @@
 var form = $('form');
 var userFound = false;  
 
-form.on('submit', function() {
+form.on('submit', function(e) {
 
-	//var userName = $('.userName');
-	//var password = $('.password');
+	e.preventDefault();
 
-	if ($('.userName').val() === '') {
+	var userName = $('.userName').val();
+	var password = $('.password').val();
+
+	if (userName === '') {
 		alert('Please enter an email address before loggin in.');
 	}
-	else if ($('.password').val() === '') {
+	else if (password === '') {
 		alert('Please enter a password before logging in.');
 	}
 	
@@ -36,14 +38,17 @@ form.on('submit', function() {
 		alert('Your user was not found');		
 	}
 
+	else {
+		
+	}
 });
 
 function checkUser(userName, password) {
 
-	if (userName === 'aaron@theironyard.com') && (password === 'password123') {
+	if ((userName === 'aaron@theironyard.com') && (password === 'password123')) {
 		return true; 
 	}
-	else if (userName === 'admin@google.com') && (password === 'honeycrisp') {
+	else if ((userName === 'admin@google.com') && (password === 'honeycrisp')) {
 		return true;
 	}
 	else {
@@ -52,6 +57,6 @@ function checkUser(userName, password) {
 }
 
 
-
+//use indexOf to check for @ symbol in email address, dont need regex  
 
 
