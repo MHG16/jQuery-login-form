@@ -26,28 +26,33 @@ form.on('submit', function(e) {
 	var userName = $('.userName').val();
 	var password = $('.password').val();
 
-	//check if userName is empty 
+	//check if userName or password is empty 
 	//use indexOf to check for @ symbol in email address, dont need regex  
 
 	if ((userName === '') || (userName.indexOf('@') === -1)) {
 		alert('Please enter an email address before loggin in.');
+		return;
 	}
 	else if (password === '') {
 		alert('Please enter a password before logging in.');
+		return;
 	}
 	
+
 	//need to check first for found user names.
 	//then check that password for found user is correct.  
 
 	userFound = checkUser(userName);
 	if (!userFound) {
-		alert('Your user was not found');		
+		alert('Your user was not found');	
+		return;	
 	}
 
 	passwordCorrect = checkFoundUserPassword(userName, password)
 
 	if (!passwordCorrect) {
 		alert('The password you entered is incorrect')
+		return;
 	}
 
 	else {
