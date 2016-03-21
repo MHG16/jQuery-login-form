@@ -15,21 +15,43 @@
 // admin@google.com / pandas / honeycrisp
 
 var form = $('form');
-var userName = $('.userName');
-var password = $('.password');
+var userFound = false;  
 
 form.on('submit', function() {
-	if(userName === '') {
+
+	//var userName = $('.userName');
+	//var password = $('.password');
+
+	if ($('.userName').val() === '') {
 		alert('Please enter an email address before loggin in.');
 	}
-	else if (password === '') {
+	else if ($('.password').val() === '') {
 		alert('Please enter a password before logging in.');
 	}
-	else {
-		alert('You entered both email address and password');
+	
+	//check if password and user name are found
+
+	userFound = checkUser(userName, password);
+	if (!userFound) {
+		alert('Your user was not found');		
 	}
 
 });
+
+function checkUser(userName, password) {
+
+	if (userName === 'aaron@theironyard.com') && (password === 'password123') {
+		return true; 
+	}
+	else if (userName === 'admin@google.com') && (password === 'honeycrisp') {
+		return true;
+	}
+	else {
+		return false;  
+	}
+}
+
+
 
 
 
