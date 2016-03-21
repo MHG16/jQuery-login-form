@@ -67,7 +67,7 @@ function checkUser(userName) {
 
 function checkFoundUserPassword(userName, password) {
 	if (userName === 'aaron@theironyard.com' && (password === 'password123') || 
-		(userName === 'admin@google.com' && (password === honeycrisp))) {
+		(userName === 'admin@google.com' && (password === 'honeycrisp'))) {
 		return true;
 	}
 	else {
