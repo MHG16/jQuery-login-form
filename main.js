@@ -16,6 +16,7 @@
 
 var form = $('form');
 var userFound = false;  
+var passwordCorrect = false;
 
 form.on('submit', function(e) {
 
@@ -35,29 +36,26 @@ form.on('submit', function(e) {
 		alert('Please enter a password before logging in.');
 	}
 	
-	//check if password and user name are found
-
-
 	//need to check first for found user names.
 	//then check that password for found user is correct.  
 
-	userFound = checkUser(userName, password);
+	userFound = checkUser(userName);
 	if (!userFound) {
 		alert('Your user was not found');		
 	}
 
-	checkFoundUserPassword(userName, password)
+	passwordCorrect = checkFoundUserPassword(userName, password)
 
-	if ()
-
-
+	if (!passwordCorrect) {
+		alert('The password you entered is incorrect')
+	}
 
 	else {
 		$(location).attr('href', 'http://www.theironyard.com')
 	}
 });
 
-function checkUserName(userName) {
+function checkUser(userName) {
 
 	if ((userName === 'aaron@theironyard.com') || (userName === 'admin@google.com')) {
 		return true; 
@@ -69,7 +67,7 @@ function checkUserName(userName) {
 
 function checkFoundUserPassword(userName, password) {
 	if (userName === 'aaron@theironyard.com' && (password === 'password123') || 
-		(userName === 'admin@google.com' && password === honeycrisp)) {
+		(userName === 'admin@google.com' && (password === honeycrisp))) {
 		return true;
 	}
 	else {
