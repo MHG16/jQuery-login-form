@@ -1,0 +1,18 @@
+{
+  "name": "jquery-login-form",
+  "version": "1.0.0",
+  "description": "login-form",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery",
+    "login-form"
+  ],
+  "author": "Martin Grossmann",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.2.2"
+  }
+}
