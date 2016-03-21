@@ -19,6 +19,7 @@ var userFound = false;
 
 form.on('submit', function(e) {
 
+	//this prevents the form from re-loading
 	e.preventDefault();
 
 	var userName = $('.userName').val();
@@ -27,7 +28,7 @@ form.on('submit', function(e) {
 	//check if userName is empty 
 	//use indexOf to check for @ symbol in email address, dont need regex  
 
-	if (userName === '') || (userName.indexOf('@') === -1) {
+	if ((userName === '') || (userName.indexOf('@') === -1)) {
 		alert('Please enter an email address before loggin in.');
 	}
 	else if (password === '') {
@@ -36,30 +37,45 @@ form.on('submit', function(e) {
 	
 	//check if password and user name are found
 
+
+	//need to check first for found user names.
+	//then check that password for found user is correct.  
+
 	userFound = checkUser(userName, password);
 	if (!userFound) {
 		alert('Your user was not found');		
 	}
+
+	checkFoundUserPassword(userName, password)
+
+	if ()
+
+
 
 	else {
 		$(location).attr('href', 'http://www.theironyard.com')
 	}
 });
 
-function checkUser(userName, password) {
+function checkUserName(userName) {
 
-	if ((userName === 'aaron@theironyard.com') && (password === 'password123')) {
+	if ((userName === 'aaron@theironyard.com') || (userName === 'admin@google.com')) {
 		return true; 
-	}
-	else if ((userName === 'admin@google.com') && (password === 'honeycrisp')) {
-		return true;
 	}
 	else {
 		return false;  
 	}
 }
 
-
+function checkFoundUserPassword(userName, password) {
+	if (userName === 'aaron@theironyard.com' && (password === 'password123') || 
+		(userName === 'admin@google.com' && password === honeycrisp)) {
+		return true;
+	}
+	else {
+		return false;  
+	}
+}
 
 
 
