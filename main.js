@@ -24,7 +24,10 @@ form.on('submit', function(e) {
 	var userName = $('.userName').val();
 	var password = $('.password').val();
 
-	if (userName === '') {
+	//check if userName is empty 
+	//use indexOf to check for @ symbol in email address, dont need regex  
+
+	if (userName === '') || (userName.indexOf('@') === -1) {
 		alert('Please enter an email address before loggin in.');
 	}
 	else if (password === '') {
@@ -57,6 +60,7 @@ function checkUser(userName, password) {
 }
 
 
-//use indexOf to check for @ symbol in email address, dont need regex  
+
+
 
 
