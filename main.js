@@ -44,7 +44,7 @@ form.on('submit', function(e) {
 
 	userFound = checkUser(userName);
 	if (!userFound) {
-		alert('Your user was not found');	
+		alert('Your user name was not found');	
 		return;	
 	}
 
