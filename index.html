@@ -2,15 +2,17 @@
 <html>
 <head>
 	<title>Login Form</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.scss">
 </head>
 <body>
-	<section class="title">
+	<section class="top">
+		<img src="images/treemoLabs-logo.png"/>
 	</section>
-	<section class="entry">
-		<form> 
-			<p>User name<input type="text" class="userName"></p>
-			<p>Password<input type="password" class="password"></p>
+	<section class="bottom">
+		<form class="login"> 
+			<h1>User name</h1><input type="text" class="userName"></input>
+			<h1>Password</h1><input type="password" class="password"></input>
 			<button type="submit">Sign in</button>
 		</form>
 	</section>

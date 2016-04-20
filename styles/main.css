@@ -1,3 +1,36 @@
+body {
+  margin: 0;
+  background-image: url(../images/bg-login-top.png);
+  background-repeat: repeat; }
 
+.top {
+  height: 20em; }
+
+img {
+  padding: 14em 10em 2em 10em; }
+
+.bottom {
+  background-image: url(../images/bg-login.png);
+  background-repeat: repeat;
+  height: 25em; }
+
+.login {
+  padding-top: 0.5em; }
+
+h1 {
+  color: #FFF;
+  font-size: .75em; }
+
+.userName {
+  width: 14em;
+  float: left; }
+
+.password {
+  width: 14em;
+  float: left; }
+
+button {
+  margin-left: 1em;
+  background-color: #70AE21; }
 
 /*# sourceMappingURL=main.css.map */
