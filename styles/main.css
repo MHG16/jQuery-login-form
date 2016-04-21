@@ -4,7 +4,8 @@ body {
   background-repeat: repeat; }
 
 .top {
-  height: 20em; }
+  height: 20em;
+  padding: 0 22em; }
 
 img {
   padding: 14em 10em 2em 10em; }
@@ -19,7 +20,10 @@ img {
 
 h1 {
   color: #FFF;
-  font-size: .75em; }
+  font-size: .75em;
+  display: inline-block;
+  float: left;
+  clear: left; }
 
 .userName {
   width: 14em;
