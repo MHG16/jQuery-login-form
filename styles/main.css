@@ -16,19 +16,40 @@ img {
   height: 25em; }
 
 .login {
-  padding-top: 0.5em; }
+  padding-top: 1em;
+  width: 18em;
+  margin: 0 auto; }
 
-h1 {
+.user {
   color: #FFF;
-  font-size: .75em; }
+  font-size: .75em;
+  display: inline; }
+
+.pw {
+  color: #FFF;
+  font-size: .75em;
+  display: inline;
+  margin-top: .50em; }
 
 .userName {
-  width: 14em; }
+  width: 12em;
+  border-radius: .3em;
+  height: 1.25em;
+  margin-left: 1em; }
 
 .password {
-  width: 14em; }
+  width: 12em;
+  border-radius: .3em;
+  height: 1.25em;
+  margin-top: .75em;
+  margin-left: 1em; }
 
 button {
-  background-color: #70AE21; }
+  background-color: #70AE21;
+  margin-top: .25em;
+  float: right;
+  margin-top: .75em;
+  color: #FFF;
+  border-radius: .3em; }
 
 /*# sourceMappingURL=main.css.map */
