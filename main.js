@@ -30,7 +30,7 @@ form.on('submit', function(e) {
 	//use indexOf to check for @ symbol in email address, dont need regex  
 
 	if ((userName === '') || (userName.indexOf('@') === -1)) {
-		alert('Please enter an email address before loggin in.');
+		alert('Please enter an email address before logging in.');
 		return;
 	}
 	else if (password === '') {
