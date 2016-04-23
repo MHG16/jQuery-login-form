@@ -7,7 +7,7 @@ body {
 .top {
 
 	height: 20em;   
-	padding: 0 22em;  	
+	padding: 0 22em 1em 22em;  	
  
 }
 
@@ -32,25 +32,23 @@ img {
 h1 {
 	color: #FFF;
 	font-size: .75em;  
-	display:inline-block;
-	float:left;  
-	clear:left;  
+	
 }
 	
 
 .userName {
 	width: 14em;  
-	float:left;  
+	
 }	
 
 
 .password {
 	width: 14em;
-	float:left;    
+	  
 }
 
 button {
-	margin-left: 1em;  
+	
 	background-color: #70AE21;
 }
 

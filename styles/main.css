@@ -5,7 +5,7 @@ body {
 
 .top {
   height: 20em;
-  padding: 0 22em; }
+  padding: 0 22em 1em 22em; }
 
 img {
   padding: 14em 10em 2em 10em; }
@@ -20,21 +20,15 @@ img {
 
 h1 {
   color: #FFF;
-  font-size: .75em;
-  display: inline-block;
-  float: left;
-  clear: left; }
+  font-size: .75em; }
 
 .userName {
-  width: 14em;
-  float: left; }
+  width: 14em; }
 
 .password {
-  width: 14em;
-  float: left; }
+  width: 14em; }
 
 button {
-  margin-left: 1em;
   background-color: #70AE21; }
 
 /*# sourceMappingURL=main.css.map */
